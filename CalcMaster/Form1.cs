@@ -120,10 +120,17 @@ namespace CalcMaster
         {
             if (e.KeyChar == 0xD && res.Text != "")
             {
-                int o = (op.Text == "+") ? 1 : -1;
-                if (Convert.ToInt32(res.Text) == Convert.ToInt32(op1.Text) + Convert.ToInt32(op2.Text)*o) Good++;
-                else Bad++;
-                Nextexpr();
+                try
+                {
+                    int o = (op.Text == "+") ? 1 : -1;
+                    if (Convert.ToInt32(res.Text) == Convert.ToInt32(op1.Text) + Convert.ToInt32(op2.Text)*o) Good++;
+                    else Bad++;
+                    Nextexpr();
+                }
+                catch
+                {
+                    res.Text = "";
+                }
             }
         }
     }
