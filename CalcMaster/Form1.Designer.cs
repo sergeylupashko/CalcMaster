@@ -147,6 +147,7 @@
             // 
             this.cGood.AutoSize = true;
             this.cGood.Font = new System.Drawing.Font("Wingdings", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.cGood.ForeColor = System.Drawing.Color.Red;
             this.cGood.Location = new System.Drawing.Point(12, 210);
             this.cGood.Name = "cGood";
             this.cGood.Size = new System.Drawing.Size(63, 53);
@@ -157,6 +158,7 @@
             // 
             this.cBad.AutoSize = true;
             this.cBad.Font = new System.Drawing.Font("Wingdings", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.cBad.ForeColor = System.Drawing.Color.Blue;
             this.cBad.Location = new System.Drawing.Point(400, 210);
             this.cBad.Name = "cBad";
             this.cBad.Size = new System.Drawing.Size(63, 53);
